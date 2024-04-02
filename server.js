@@ -1,6 +1,6 @@
 // Import modules
 import express from 'express'
-import blogsRouter from './routers/blogsRouter.js'
+import blogsRouter from './routes/blogsRouter.js'
 
 const app = express()
 
