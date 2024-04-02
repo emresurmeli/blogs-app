@@ -1,6 +1,12 @@
+// Import envs
+import 'dotenv/config'
+
 // Import modules
 import express from 'express'
 import blogsRouter from './routes/blogsRouter.js'
+
+// Database
+import './config/dbConnection.js'
 
 const app = express()
 

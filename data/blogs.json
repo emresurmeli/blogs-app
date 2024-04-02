@@ -1,57 +1,46 @@
 [
   {
-    "id": 1,
     "title": "Introduction to Blogging",
     "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus nisi et ligula consectetur, eu tincidunt sem efficitur."
   },
   {
     "title": "The Art of Writing",
-    "body": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed non turpis auctor, gravida purus eget, molestie felis..",
-    "id": 2
+    "body": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed non turpis auctor, gravida purus eget, molestie felis.."
   },
   {
-    "id": 3,
     "title": "Tips for Successful Blogging",
     "body": "Vestibulum ut fermentum odio. Quisque fermentum aliquet eros, vel molestie lectus sagittis eu."
   },
   {
-    "id": 4,
     "title": "Exploring Different Blogging Platforms",
     "body": "Integer rutrum mauris non ex aliquam, nec placerat quam mattis. Ut non justo vitae nulla pretium hendrerit."
   },
   {
-    "id": 5,
     "title": "The Importance of Consistency in Blogging",
     "body": "Fusce aliquet elit quis mauris tincidunt, a faucibus justo molestie. Curabitur sodales lacus id nisl interdum, non malesuada orci ultrices."
   },
   {
-    "id": 6,
     "title": "SEO Strategies for Bloggers",
     "body": "Donec rhoncus nulla ac nisl pulvinar, quis fermentum ligula dignissim. Maecenas rhoncus nulla at lectus congue, quis efficitur risus pharetra."
   },
   {
-    "id": 7,
     "title": "Engaging Your Audience through Blogging",
     "body": "Suspendisse potenti. Ut auctor felis at mi convallis, vitae maximus libero viverra."
   },
   {
-    "id": 8,
     "title": "Finding Inspiration for Blog Topics",
     "body": "Nam sed urna sed felis pulvinar dapibus. Phasellus id libero eu risus tincidunt bibendum."
   },
   {
-    "id": 9,
     "title": "Monetizing Your Blog: Strategies and Tips",
     "body": "Sed scelerisque quam in arcu interdum, vitae accumsan mauris eleifend. Nunc congue tortor at odio efficitur, sit amet ultricies arcu tincidunt."
   },
   {
-    "id": 10,
     "title": "The Future of Blogging",
     "body": "Maecenas ac odio vitae lacus venenatis ullamcorper. Proin sagittis mi at dolor dapibus, non laoreet justo vestibulum."
   },
   {
     "title": "I suck at blogging",
-    "body": "Sad face, but not really, sips coffee.",
-    "id": 11
+    "body": "Sad face, but not really, sips coffee."
   }
 ]
