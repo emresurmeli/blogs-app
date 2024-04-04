@@ -2,7 +2,9 @@ import mongoose from 'mongoose'
 
 const db = mongoose.connection
 
-mongoose.connect(process.env.DATABASE_URI)
+process.env.ENV === 'production' ?
+  mongoose.connect(process.env.DATABASE_URI) :
+  mongoose.connect(process.env.DEV_DATABASE_URI)
 
 db.on('connected', () => {
   console.log(`MongoDB server is up and running on port ${db.port}`)
