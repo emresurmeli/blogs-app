@@ -36,6 +36,18 @@ const getBlog = async (req, res) => {
   }
 }
 
+const getAuthorBlogs = async (req, res) => {
+  try {
+    const authorId = req.params.authorId
+    const authorBlogs = await Blog.find({ authorId: authorId })
+
+    res.json(authorBlogs)
+  } catch (error) {
+    console.error(error)
+    res.status(500).json(error)
+  }
+}
+
 // POST
 const createBlog = async (req, res) => {
   try {
@@ -94,6 +106,7 @@ const deleteBlog = async (req, res) => {
 export {
   getBlogs,
   getBlog,
+  getAuthorBlogs,
   createBlog,
   updateBlog,
   deleteBlog

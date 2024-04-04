@@ -1,12 +1,13 @@
 // Import modules
 import { Router } from 'express'
-import { getBlogs, getBlog, createBlog, updateBlog, deleteBlog } from '../controllers/blogsController.js'
+import { getBlogs, getBlog, createBlog, updateBlog, deleteBlog, getAuthorBlogs } from '../controllers/blogsController.js'
 
 const router = Router()
 
 // GET routes
 router.get('/', getBlogs)
 router.get('/:id', getBlog)
+router.get('/authorBlogs/:authorId', getAuthorBlogs)
 
 // POST routes
 router.post('/', createBlog)

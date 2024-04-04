@@ -16,7 +16,12 @@ const authorSchema = new Schema({
     maxlength: 25
   },
   url: String,
-  blogs: Array
+  blogs: [{type: mongoose.Types.ObjectId, ref: 'Blog'}]
+})
+
+authorSchema.pre('save', async (next) => {
+  // make sure all blogs are up to date
+  this.blogs = await Blog.find({ id: this._id })
 })
 
 const Author = mongoose.model('Author', authorSchema)

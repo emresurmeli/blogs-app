@@ -1,9 +1,12 @@
 import { Router } from 'express'
-import { createAuthor } from '../controllers/authorsController.js'
+import { createAuthor, getAuthor } from '../controllers/authorsController.js'
 
 const router = Router()
 
-//POST routes
+// GET routes
+router.get('/:id', getAuthor)
+
+// POST routes
 router.post('/', createAuthor)
 
 export default router
