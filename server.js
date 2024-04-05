@@ -5,6 +5,7 @@ import 'dotenv/config';
 import express from 'express';
 import blogsRouter from './routes/blogsRouter';
 import authorsRouter from './routes/authorsRouter';
+import authRouter from './routes/authRouter';
 
 // Database
 import './config/dbConnection';
@@ -15,6 +16,7 @@ const app = express();
 app.use(express.json());
 
 // Routes
+app.use('/auth', authRouter);
 app.use('/blogs', blogsRouter);
 app.use('/authors', authorsRouter);
 
