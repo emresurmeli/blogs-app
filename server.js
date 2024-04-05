@@ -3,12 +3,12 @@ import 'dotenv/config';
 
 // Import modules
 import express from 'express';
-import blogsRouter from './routes/blogsRouter';
-import authorsRouter from './routes/authorsRouter';
-import authRouter from './routes/authRouter';
+import blogsRouter from './routes/blogsRouter.js';
+import authorsRouter from './routes/authorsRouter.js';
+import authRouter from './routes/authRouter.js';
 
 // Database
-import './config/dbConnection';
+import './config/dbConnection.js';
 
 const app = express();
 
