@@ -1,23 +1,23 @@
 // Import envs
-import 'dotenv/config'
+import 'dotenv/config';
 
 // Import modules
-import express from 'express'
-import blogsRouter from './routes/blogsRouter.js'
-import authorsRouter from './routes/authorsRouter.js'
+import express from 'express';
+import blogsRouter from './routes/blogsRouter';
+import authorsRouter from './routes/authorsRouter';
 
 // Database
-import './config/dbConnection.js'
+import './config/dbConnection';
 
-const app = express()
+const app = express();
 
 // Middleware
-app.use(express.json())
+app.use(express.json());
 
 // Routes
-app.use('/blogs', blogsRouter)
-app.use('/authors', authorsRouter)
+app.use('/blogs', blogsRouter);
+app.use('/authors', authorsRouter);
 
 app.listen(3000, () => {
-  console.log('Express server is running...')
-})
+  console.log('Express server is running...');
+});
