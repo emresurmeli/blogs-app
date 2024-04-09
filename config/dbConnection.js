@@ -17,3 +17,5 @@ db.on('disconnected', () => {
 db.on('error', (error) => {
   console.error(`There was an error: ${error}`)
 })
+
+export default db
