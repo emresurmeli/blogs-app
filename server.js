@@ -11,6 +11,8 @@ import imagesRouter from './routes/imagesRouter.js'
 // Database
 import './config/dbConnection.js'
 
+const PORT = process.env.PORT || 8080
+
 const app = express()
 
 // Middleware
@@ -22,6 +24,6 @@ app.use('/images', imagesRouter)
 app.use('/blogs', blogsRouter)
 app.use('/authors', authorsRouter)
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log('Express server is running...')
 })
